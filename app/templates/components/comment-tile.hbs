@@ -1,5 +1,9 @@
 
 <h4>Comments:</h4>
 {{#each comment as |comment|}}
-  <li>{{comment.author}}</li>
+  <li>
+    Author: {{comment.author}} <br>
+    Comment: {{comment.text}}
+    <hr>
+  </li>
 {{/each}}

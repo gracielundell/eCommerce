@@ -13,10 +13,10 @@ export default Ember.Component.extend({
         description: this.get('description') ? this.get('description') : " ",
         price: parseInt(this.get('price'))
       };
-      console.log("params: ", params);
       this.set('name', "");
       this.set('description', "");
       this.set('price', "");
+      this.set('showAddItemForm', false);
       this.sendAction('saveNewItem', params);
     }
   }
