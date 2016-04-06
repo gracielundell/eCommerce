@@ -8,6 +8,9 @@ export default Ember.Route.extend({
     saveNewItem(params) {
       var newItem = this.store.createRecord('product', params);
       newItem.save();
+    },
+    deleteProduct(product) {
+      product.destroyRecord();
     }
   }
 });
