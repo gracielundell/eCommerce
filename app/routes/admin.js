@@ -11,6 +11,14 @@ export default Ember.Route.extend({
     },
     deleteProduct(product) {
       product.destroyRecord();
+    },
+    editItem(product, params) {
+      Object.keys(params).forEach(function(key) {
+        if (params[key]!==undefined) {
+          product.set(key, params[key]);
+        }
+      });
+      product.save();
     }
   }
 });

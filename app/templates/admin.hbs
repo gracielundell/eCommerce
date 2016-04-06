@@ -2,6 +2,7 @@
 
 {{#each model as |product|}}
   {{admin-tile product=product deleteProduct="deleteProduct"}}
+  {{edit-product product=product editItem="editItem"}}
 {{/each}}
 
 {{new-item saveNewItem="saveNewItem"}}

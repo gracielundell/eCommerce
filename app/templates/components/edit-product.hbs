@@ -1,0 +1,13 @@
+{{#if showEditItemForm}}
+<form>
+  <label for="name">Name</label>
+  {{input value=name id="name" placeholder=product.name}}
+  <label for="description">Description</label>
+  {{input value=description id="description" placeholder=product.description}}
+  <label for="price">Price</label>
+  {{input value=price id="price" placeholder=product.price}}
+  <button {{action 'editItem' product}}>Save</button>
+</form>
+{{else}}
+<button {{action 'showEditItemForm'}}>Edit</button>
+{{/if}}
