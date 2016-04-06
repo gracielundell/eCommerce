@@ -1,0 +1,7 @@
+<h1>Admin</h1>
+
+{{#each model as |product|}}
+  {{admin-tile product=product}}
+{{/each}}
+
+{{new-item saveNewItem="saveNewItem"}}

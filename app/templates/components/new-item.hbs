@@ -1,0 +1,14 @@
+<br><br>
+{{#if showAddItemForm}}
+<form>
+  <label for="name">Name</label>
+  {{input value=name id="name"}}
+  <label for="description">Description</label>
+  {{input value=description id="description"}}
+  <label for="price">Price</label>
+  {{input value=price id="price" required="required"}}
+  <button {{action 'saveNewItem'}}>Save</button>
+</form>
+{{else}}
+  <button {{action 'showAddItemForm'}}>Add New Item</button>
+{{/if}}
