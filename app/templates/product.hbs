@@ -1,3 +1,10 @@
-<h1>Product Details</h1>
+<h1>Product Details For {{model.name}}</h1>
 
 {{product-detail product=model}}
+
+
+{{comment-tile comment=model.comments}}
+
+
+
+{{new-comment product=model saveComment="saveComment"}}
