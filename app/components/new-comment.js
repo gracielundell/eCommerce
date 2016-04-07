@@ -13,6 +13,11 @@ export default Ember.Component.extend({
         product: this.get('product'),
         rating: parseInt(this.get('rating'))
       };
+      if (params.rating >= 5) {
+        params.rating = 5
+      } else if (params.rating <=0) {
+        params.rating = 1
+      }
       this.set('showNewCommentForm', false);
       this.sendAction('saveComment', params);
     }
