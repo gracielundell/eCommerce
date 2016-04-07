@@ -1,7 +1,8 @@
+Average Rating: {{productRating}}
 
 <h4>Comments:</h4>
 
-{{#each comment as |comment|}}
+{{#each product.comments as |comment|}}
   <li>
     Author: {{comment.author}} <br>
     Comment: {{comment.text}} <br>

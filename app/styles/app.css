@@ -1,0 +1,20 @@
+.jumbotron {
+  background-image: url('https://static.pexels.com/photos/3867/explosion-firework-new-year-s-eve-december-31.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron h2 {
+  color: white;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 60px;
+  font-family: sans-serif;
+}
+
+.jumbotron a {
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+}
