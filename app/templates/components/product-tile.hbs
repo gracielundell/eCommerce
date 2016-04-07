@@ -1,2 +1,4 @@
-<li>{{#link-to 'product' product}}{{product.name}}{{/link-to}}
-<button {{action 'addToCart' product}}>Add to Cart</button></li>
+<div class="productLinks">
+  <li>{{product-comments product}}{{#link-to 'product' product}}{{product.name}}{{/link-to}}
+    <button {{action 'addToCart' product}}>Add to Cart</button></li>
+</div>
