@@ -1,15 +1,12 @@
 {{#if showNewCommentForm}}
 <h1>Add New Comment</h1>
   <form>
-    <div class="form-group">
-      <label for="author">Author</label>
-      {{input value=author id="author"}}
-    </div>
-
-    <div class="form-group">
-      <label for="text">Text</label>
-      {{input value=text id="text"}}
-    </div>
+    <label for="author">Author</label>
+    {{input value=author id="author"}}
+    <label for="text">Text</label>
+    {{input value=text id="text"}}
+    <label for="rating">Rate It (1 - 5)!</label>
+    {{input type="number" value=rating id="rating"}}
     <button {{action 'saveComment'}}>Save</button>
   </form>
 {{else}}

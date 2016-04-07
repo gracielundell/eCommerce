@@ -1,9 +1,11 @@
 
 <h4>Comments:</h4>
+
 {{#each comment as |comment|}}
   <li>
     Author: {{comment.author}} <br>
     Comment: {{comment.text}} <br>
+    Rating: {{comment.rating}} <br>
     <button {{action 'deleteComment' comment}}>Delete Comment</button>
     <hr>
   </li>
