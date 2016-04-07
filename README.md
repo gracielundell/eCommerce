@@ -1,7 +1,9 @@
 # E-commerce
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This project is an example of using the Ember.js framework to create an E-commerce site. The site implements routing and models to list products for sale, as well as comments left by previous shoppers. The site has functionality to add/delete items to a cart, display how many items and the total cost of all items in the user's cart.
+
+## Known Bugs
+The feature for finding the average of ratings for a product works sporadically, and breaks on page reloads.
 
 ## Prerequisites
 
@@ -51,3 +53,5 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+## Legal
+Copyright (c) 2015 Copyright Holder All Rights Reserved. This project is licensed under the MIT License.
