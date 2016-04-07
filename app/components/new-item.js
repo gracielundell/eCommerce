@@ -9,8 +9,8 @@ export default Ember.Component.extend({
     },
     saveNewItem() {
       var params = {
-        name: this.get('name') ? this.get('name') : " ",
-        description: this.get('description') ? this.get('description') : " ",
+        name: this.get('name') ? this.get('name') : "",
+        description: this.get('description') ? this.get('description') : "",
         price: parseInt(this.get('price'))
       };
       this.set('name', "");

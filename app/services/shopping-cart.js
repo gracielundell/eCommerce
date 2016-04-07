@@ -2,7 +2,10 @@ import Ember from 'ember';
 
 export default Ember.Service.extend({
   items: [],
-  totalCart: Ember.computed('items.[]', function() {
+  cartList: Ember.computed('items', function(){
+    return this.get('items');
+  }),
+  totalCart: Ember.computed('items.{@each.price}', function() {
     var totalCost = 0;
     var items = this.get('items');
     for (var i = 0; i < items.length; i++ ) {
@@ -13,6 +16,10 @@ export default Ember.Service.extend({
 
   add(item) {
     this.get('items').pushObject(item);
+  },
+  remove(item) {
+    var index = this.get('items').indexOf(item);
+    this.set('items', this.get('items').removeAt(index));
   }
 
 });

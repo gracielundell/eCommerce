@@ -5,9 +5,10 @@
   <label for="description">Description</label>
   {{input value=description id="description" placeholder=product.description}}
   <label for="price">Price</label>
-  {{input value=price id="price" placeholder=product.price}}
+  {{input type="number" value=price id="price" placeholder=product.price}}
   <button {{action 'editItem' product}}>Save</button>
 </form>
 {{else}}
 <button {{action 'showEditItemForm'}}>Edit</button>
 {{/if}}
+<hr>

@@ -13,6 +13,9 @@ export default Ember.Component.extend({
         price: parseInt(this.get('price'))
       };
       this.set('showEditItemForm', false);
+      // this.set('name', "");
+      // this.set('description', "");
+      // this.set('price', "");
       this.sendAction('editItem', product, params);
     }
   }
