@@ -47,7 +47,7 @@ button:hover {
   color: white;
 }
 
-.productLinks {
+.productLinks a {
   font-size: 20px;
   margin: 5px;
 }
