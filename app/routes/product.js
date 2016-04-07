@@ -2,8 +2,8 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-      return this.store.findRecord('product', params.product_id);
-    },
+    return this.store.findRecord('product', params.product_id);
+  },
   actions: {
     saveComment(params) {
       var newComment = this.store.createRecord('comment', params);
@@ -12,6 +12,9 @@ export default Ember.Route.extend({
       newComment.save().then(function()  {
         return product.save();
       });
+    },
+    deleteComment(comment) {
+      comment.destroyRecord();
     }
   }
 });

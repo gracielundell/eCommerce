@@ -3,7 +3,8 @@
 {{#each comment as |comment|}}
   <li>
     Author: {{comment.author}} <br>
-    Comment: {{comment.text}}
+    Comment: {{comment.text}} <br>
+    <button {{action 'deleteComment' comment}}>Delete Comment</button>
     <hr>
   </li>
 {{/each}}
